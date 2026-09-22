@@ -1,0 +1,9 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "STM32F103: Build Master", "type": "shell", "command": "powershell", "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\scripts\\build.ps1", "-Role", "Master"], "problemMatcher": "$gcc", "group": { "kind": "build", "isDefault": true } },
+    { "label": "STM32F103: Flash Master (CMSIS-DAP)", "type": "shell", "command": "powershell", "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\scripts\\flash.ps1", "-Role", "Master"], "problemMatcher": [] },
+    { "label": "STM32F103: Build Slave", "type": "shell", "command": "powershell", "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\scripts\\build.ps1", "-Role", "Slave"], "problemMatcher": [] },
+    { "label": "STM32F103: Flash Slave (CMSIS-DAP)", "type": "shell", "command": "powershell", "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\scripts\\flash.ps1", "-Role", "Slave"], "problemMatcher": [] }
+  ]
+}

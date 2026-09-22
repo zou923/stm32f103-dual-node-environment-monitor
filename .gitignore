@@ -1,0 +1,14 @@
+# Build outputs
+build/
+*.elf
+*.hex
+*.bin
+*.map
+
+# IDE and operating-system files
+.vscode/*.log
+.DS_Store
+Thumbs.db
+
+# STM32CubeF1 is fetched separately from the official ST repository.
+third_party/STM32CubeF1/

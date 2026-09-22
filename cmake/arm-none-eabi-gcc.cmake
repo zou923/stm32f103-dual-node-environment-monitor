@@ -1,0 +1,17 @@
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_SYSTEM_PROCESSOR arm)
+
+if(DEFINED ENV{ARM_GNU_ROOT} AND NOT "$ENV{ARM_GNU_ROOT}" STREQUAL "")
+  set(ARM_GNU_ROOT "$ENV{ARM_GNU_ROOT}")
+else()
+  set(ARM_GNU_ROOT "C:/Users/Zou/Tools/stm32h750/xpack-arm-none-eabi-gcc-15.2.1-1.1-win32-x64/xpack-arm-none-eabi-gcc-15.2.1-1.1")
+endif()
+file(TO_CMAKE_PATH "${ARM_GNU_ROOT}" ARM_GNU_ROOT)
+
+set(CMAKE_C_COMPILER "${ARM_GNU_ROOT}/bin/arm-none-eabi-gcc.exe")
+set(CMAKE_ASM_COMPILER "${ARM_GNU_ROOT}/bin/arm-none-eabi-gcc.exe")
+set(CMAKE_AR "${ARM_GNU_ROOT}/bin/arm-none-eabi-ar.exe")
+set(CMAKE_RANLIB "${ARM_GNU_ROOT}/bin/arm-none-eabi-ranlib.exe")
+set(CMAKE_OBJCOPY "${ARM_GNU_ROOT}/bin/arm-none-eabi-objcopy.exe")
+set(CMAKE_SIZE "${ARM_GNU_ROOT}/bin/arm-none-eabi-size.exe")
+set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)

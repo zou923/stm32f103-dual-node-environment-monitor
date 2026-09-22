@@ -1,0 +1,8 @@
+{
+  "cmake.generator": "Ninja",
+  "cmake.configureOnOpen": false,
+  "C_Cpp.default.compilerPath": "C:/Users/Zou/Tools/stm32h750/xpack-arm-none-eabi-gcc-15.2.1-1.1-win32-x64/xpack-arm-none-eabi-gcc-15.2.1-1.1/bin/arm-none-eabi-gcc.exe",
+  "C_Cpp.default.intelliSenseMode": "windows-gcc-arm",
+  "C_Cpp.default.cStandard": "c11",
+  "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json"
+}
